@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.Replacment_Fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+
+.inputField {
+  width: 500px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(109, 106, 106);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.Replacment_Fields button{
+  width: 120px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin{
+  margin-left: 45px;
+}
+.CountSpecific{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#countWord{
+  width: 200px;
+}
+.TotalWords{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* width: 50%; */
+}
+.TotalWords{
+  border-bottom: 2px solid black;
+}
+#form{
+  font-weight: 500;
+}
