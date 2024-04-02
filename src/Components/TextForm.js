@@ -74,6 +74,7 @@ const clearText=()=>{
    props.showAlert(" Text field is cleared","success")
 
 }
+
 const CountSpecificWord=()=>{
      let CountSpecific = document.querySelector(".CountSpecific")
      CountSpecific.style.display = "none"
@@ -140,6 +141,7 @@ const CountSpecificWord=()=>{
             <button type="button" className="btn btn-outline-success mx-2 my-1" onClick={() => OpenFields("count")} >
               Count Specific Word
            </button>
+          
    </div>
 
   <div className="container my-4 Replacment_Fields">
