@@ -1,8 +1,16 @@
 import "./App.css";
+import React, { useState } from "react";
 import Alerts from "./Components/Alerts";
 import Navbar from "./Components/Navbar";
-import React, { useState } from "react";
 import TextForm from "./Components/TextForm";
+import About from "./Components/About";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   const [mode, setmode] = useState("light");
@@ -12,8 +20,6 @@ function App() {
       setmode("Dark");
       document.body.style.color = "white";
       document.body.style.backgroundColor = "black";
-      // let navbar = document.querySelector(".navbar");
-      // navbar.style.backgroundColor = "grey";
       let form = document.querySelector("#form");
       form.style.backgroundColor = "#bcc0c0";
 
@@ -22,8 +28,6 @@ function App() {
       setmode("light");
       document.body.style.color = "black";
       document.body.style.backgroundColor = "white";
-      // let navbar = document.querySelector(".navbar");
-      // navbar.style.backgroundColor = "#9aabbd";
       let form = document.querySelector("#form");
       form.style.backgroundColor = "white";
 
@@ -42,18 +46,20 @@ function App() {
     }, 1500);
   };
   return (
-    <>
-      <Navbar heading="TextTools" mode={mode} toggleStyle={toggleStyle} />
-      <Alerts alert={alert} />
-      <div className="container my-4">
-        <TextForm
-          heading="Enter Text here to Analyze"
-          showAlert={showAlert}
-          mode={mode}
-          toggleStyle={toggleStyle}
-        />
-      </div>
-    </>
+    <Router>
+        <Navbar heading="TextTools" mode={mode} toggleStyle={toggleStyle} />
+        <Alerts alert={alert} />
+        <div className="container my-4">
+          <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <TextForm heading="Enter Text here to Analyze" showAlert={showAlert} mode={mode} toggleStyle={toggleStyle}/>
+              </Route>
+          </Switch>    
+        </div>
+    </Router>
   );
 }
 
