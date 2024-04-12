@@ -51,10 +51,11 @@ function App() {
         <Alerts alert={alert} />
         <div className="container my-4">
           <Switch>
-              <Route path="/about">
+              <Route exact path="/about">
                 <About />
               </Route>
-              <Route path="/">
+
+              <Route exact path="/">
                 <TextForm heading="Enter Text here to Analyze" showAlert={showAlert} mode={mode} toggleStyle={toggleStyle}/>
               </Route>
           </Switch>    

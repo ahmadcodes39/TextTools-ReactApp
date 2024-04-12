@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link } from "react-router-dom/cjs/react-router-dom.min";
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -20,14 +20,14 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <link className="nav-link mx-1 " to="/">
+                <Link className="nav-link mx-1 " to="/">
                   Home <span className="sr-only">(current)</span>
-                </link>
+                </Link>
               </li>
               <li className="nav-item">
-                <link className="nav-link " to="/about">
+                <Link className="nav-link " to="/about">
                   About
-                </link>
+                </Link>
               </li>
             </ul>
             <button type="button " className={`btn btn-outline-light btn-${props.mode==='light'?'dark':'light btn-dark ' } mx-5 `}onClick={props.toggleStyle}>

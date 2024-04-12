@@ -98,7 +98,7 @@ const CountSpecificWord=()=>{
 
   return (
     <>
-      <div className="form-group">
+      <div className="form-group my-3">
           <label htmlFor="exampleFormControlTextarea1">
             <h2>{props.heading}</h2>
           </label>
