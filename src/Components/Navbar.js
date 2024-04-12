@@ -1,9 +1,9 @@
 import React from "react";
-import {Link } from "react-router-dom/cjs/react-router-dom.min";
+// import {Link } from "react-router-dom/cjs/react-router-dom.min";
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <a className="navbar-brand mx-5" href="/">
+      <a className="navbar-brand mx-5" href="#">
         {props.heading}
       </a>
       <button
@@ -20,15 +20,15 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <Link className="nav-link mx-1 " to="/">
+                <a className="nav-link mx-1 " href="#">
                   Home <span className="sr-only">(current)</span>
-                </Link>
+                </a>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link " to="/about">
+              {/* <li className="nav-item">
+                <a className="nav-link " to="/about">
                   About
-                </Link>
-              </li>
+                </a>
+              </li> */}
             </ul>
             <button type="button " className={`btn btn-outline-light btn-${props.mode==='light'?'dark':'light btn-dark ' } mx-5 `}onClick={props.toggleStyle}>
             {`${props.mode==='light'?'dark':'light'}Mode`}

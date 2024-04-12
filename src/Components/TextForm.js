@@ -135,7 +135,7 @@ const CountSpecificWord=()=>{
             <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={ReverseText} >
               Reverse Entire Text
             </button>
-            <button type="button" className="btn btn-outline-dark mx-2 my-1" onClick={clearText} >
+            <button type="button" className="btn btn-outline-secondary mx-2 my-1" onClick={clearText} >
               Clear All Text
             </button>
             <button type="button" className="btn btn-outline-success mx-2 my-1" onClick={() => OpenFields("count")} >

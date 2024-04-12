@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Alerts from "./Components/Alerts";
 import Navbar from "./Components/Navbar";
 import TextForm from "./Components/TextForm";
-import About from "./Components/About";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import About from "./Components/About";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -46,21 +46,23 @@ function App() {
     }, 1500);
   };
   return (
-    <Router>
+    // <Router>
+    <>
         <Navbar heading="TextTools" mode={mode} toggleStyle={toggleStyle} />
         <Alerts alert={alert} />
         <div className="container my-4">
-          <Switch>
+          {/* <Switch>
               <Route exact path="/about">
                 <About />
               </Route>
 
-              <Route exact path="/">
+            <Route exact path="/"> */}
                 <TextForm heading="Enter Text here to Analyze" showAlert={showAlert} mode={mode} toggleStyle={toggleStyle}/>
-              </Route>
-          </Switch>    
+              {/* </Route> */}
+          {/* </Switch>     */}
         </div>
-    </Router>
+    </>
+    // </Router>
   );
 }
 
