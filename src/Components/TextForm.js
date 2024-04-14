@@ -143,19 +143,20 @@ const CountSpecificWord=()=>{
         </button>          
    </div>
 
-  <div className="container my-4 Replacment_Fields">
+  <div className="my-4 Replacment_Fields container">
       <input type="text" name="word" id="OldWord"className="inputField" placeholder="Enter Word to replace" autoFocus/>
       <input type="text" name="word" id="NewWord" className="inputField" placeholder="Enter Replacment Word"/>
       <button type="button" className="mx-15 btn btn-secondary submitBtn" onClick={replaceWords}>OK</button>
   </div>
 
-  <div className="CountSpecific">
+  <div className="CountSpecific container">
       <input autoFocus type="text" name="word" id="countWord"className="inputField" placeholder="Enter Word to count" />
       <button type="button" className="mx-15 btn btn-secondary submitBtn" id="Done" onClick={CountSpecificWord}>OK</button>
   </div>
   
- 
-    <h2>Text Summary</h2>
+      <div className="my-3">
+          <h2>Text Summary</h2>
+      </div>
       <div className="TotalWords container my-3">
           <p className="CurrentWord"><strong>Total Words</strong></p>
           <p><strong>{text.split(" ").filter(Boolean).length}</strong></p>
