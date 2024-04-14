@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TextTools-ReactApp/static/css/main.d05cf4f6.css",
-    "main.js": "/TextTools-ReactApp/static/js/main.48cc0ae6.js",
+    "main.css": "/TextTools-ReactApp/static/css/main.31a34a2b.css",
+    "main.js": "/TextTools-ReactApp/static/js/main.458a5fa5.js",
     "static/js/453.2968dea0.chunk.js": "/TextTools-ReactApp/static/js/453.2968dea0.chunk.js",
     "index.html": "/TextTools-ReactApp/index.html",
-    "main.d05cf4f6.css.map": "/TextTools-ReactApp/static/css/main.d05cf4f6.css.map",
-    "main.48cc0ae6.js.map": "/TextTools-ReactApp/static/js/main.48cc0ae6.js.map",
+    "main.31a34a2b.css.map": "/TextTools-ReactApp/static/css/main.31a34a2b.css.map",
+    "main.458a5fa5.js.map": "/TextTools-ReactApp/static/js/main.458a5fa5.js.map",
     "453.2968dea0.chunk.js.map": "/TextTools-ReactApp/static/js/453.2968dea0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d05cf4f6.css",
-    "static/js/main.48cc0ae6.js"
+    "static/css/main.31a34a2b.css",
+    "static/js/main.458a5fa5.js"
   ]
 }
