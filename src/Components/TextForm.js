@@ -113,22 +113,22 @@ const CountSpecificWord=()=>{
           ></textarea>
       </div>
 
-      <button type="button" className="btn btn-outline-primary margin" onClick={UpperCase}>
+      <button type="button" className="btn btn-outline-primary margin my-2" onClick={UpperCase}>
         Convert to Upper Case
       </button>
-      <button type="button" className="btn btn-outline-secondary mx-2" onClick={LowerCase}>
+      <button type="button" className="btn btn-outline-secondary mx-2 my-2" onClick={LowerCase}>
         Convert to Lower Case
       </button>
-      <button type="button" className="btn btn-outline-info mx-2" onClick={WideSpaces}>
+      <button type="button" className="btn btn-outline-info mx-2 my-2" onClick={WideSpaces}>
         Remove Wide Spaces
       </button>
-      <button type="button" className="btn btn-outline-warning mx-2" onClick={ExtraSpaces}>
+      <button type="button" className="btn btn-outline-warning mx-2 my-2" onClick={ExtraSpaces}>
         Remove Extra Spaces
       </button>
-      <button type="button" className="btn btn-outline-success mx-2" onClick={copyText}>
+      <button type="button" className="btn btn-outline-success mx-2 my-2" onClick={copyText}>
         Copy text
       </button>
-      <button type="button" className="btn btn-outline-danger mx-2" onClick={() => OpenFields("replace")} >
+      <button type="button" className="btn btn-outline-danger mx-2 my-2" onClick={() => OpenFields("replace")} >
         Replace Word
       </button>
   <div className="flex my-1">
