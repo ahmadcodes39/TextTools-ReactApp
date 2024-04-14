@@ -55,36 +55,38 @@
   border-right: none;
   outline: none;
 }
-.Replacment_Fields button{
+.Replacment_Fields button {
   width: 120px;
 }
-.flex{
+/* .flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.margin{
+.flexWrap{
+  flex-wrap: wrap;
+} */
+/* .margin{
   margin-left: 45px;
-}
-.CountSpecific{
+} */
+.CountSpecific {
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
 }
-#countWord{
+#countWord {
   width: 200px;
 }
-.TotalWords{
+.TotalWords {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  /* width: 50%; */
 }
-.TotalWords{
+.TotalWords {
   border-bottom: 2px solid black;
 }
-#form{
+#form {
   font-weight: 500;
 }

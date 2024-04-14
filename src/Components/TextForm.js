@@ -131,17 +131,16 @@ const CountSpecificWord=()=>{
       <button type="button" className="btn btn-outline-danger mx-2" onClick={() => OpenFields("replace")} >
         Replace Word
       </button>
-  <div className="flex my-4">
-            <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={ReverseText} >
-              Reverse Entire Text
-            </button>
-            <button type="button" className="btn btn-outline-secondary mx-2 my-1" onClick={clearText} >
-              Clear All Text
-            </button>
-            <button type="button" className="btn btn-outline-success mx-2 my-1" onClick={() => OpenFields("count")} >
-              Count Specific Word
-           </button>
-          
+  <div className="flex my-1">
+        <button type="button" className="btn btn-outline-danger mx-2 my-2 flexWrap" onClick={ReverseText} >
+          Reverse Entire Text
+        </button>
+        <button type="button" className="btn btn-outline-secondary mx-2 my-2 flexWrap" onClick={clearText} >
+          Clear All Text
+        </button>
+        <button type="button" className="btn btn-outline-success mx-2 my-2 flexWrap" onClick={() => OpenFields("count")} >
+          Count Specific Word
+        </button>          
    </div>
 
   <div className="container my-4 Replacment_Fields">
